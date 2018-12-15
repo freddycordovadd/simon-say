@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    /* background: #dedede; */
+
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial;
+}
+
+.gameboard {
+    height: 100vh;
+    width: 100vh;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    max-height: 60vh;
+    max-width: 60vh;
+}
+
+.color {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: left;
+}
+
+.verde {
+    background: #1da463;
+}
+
+.verde.light {
+    background: #4fbf83;
+}
+
+.rojo {
+    background: #dd5144;
+}
+
+.rojo.light {
+    background: #e7645c;
+}
+
+.amarillo {
+    background: #ffce46;
+}
+
+.amarillo.light {
+    background: #ffe28d;
+}
+
+.azul {
+    background: #4c8af5;
+}
+
+.azul.light {
+    background: #5ca8ff;
+}
+
+.btn-start {
+    cursor: pointer;
+    width: 420px;
+    height: 100px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    border: none;
+    border-bottom: 4px solid #c4c6c7;
+    border-radius: 8px;
+    font-size: 3em;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 210px);
+    transition: .5s;
+    outline: none;
+}
+
+.btn-start:hover {
+    color: #ecf0f1;
+    background: #2c3e50;
+    border-bottom: 4px solid #1f3346;
+}
+
+.btn-start:active {
+    transform: scale(.95);
+}
+
+/* .btn-start {
+    width: 400px;
+    height: 100px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 200px);
+} */
+
+.hide {
+    display: none;
+}
